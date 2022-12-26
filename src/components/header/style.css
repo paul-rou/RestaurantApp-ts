@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.header-logo {
+    height: 80px;
+}
+  
+.header-container {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 70%;
+    min-width: 600px;
+    max-width: 900px;
+    padding: 30px 25px;
+    color: white;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-h2 {
+    padding-left: 20px;
+}
+
+.header-h4 {
+    padding-right: 10px;
+}

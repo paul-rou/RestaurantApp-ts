@@ -1,0 +1,17 @@
+.form-text {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.form-button {
+    width: 180px;
+    margin: auto;
+}
+
+.form-titleLoader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
