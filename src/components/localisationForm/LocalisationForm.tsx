@@ -17,9 +17,10 @@ const LocalisationForm: React.FC<ILocalisationForm>= ({setLocalisationAuto, setL
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault(); 
-        
-        setLocalisationManual({lat: Number(latitude), lng: Number(longitude)});
 
+        if (!isNaN(Number(latitude)) && !isNaN(Number(longitude))) {
+            setLocalisationManual({lat: Number(latitude), lng: Number(longitude)});
+        }
       };
 
 
@@ -46,7 +47,6 @@ const LocalisationForm: React.FC<ILocalisationForm>= ({setLocalisationAuto, setL
                     {isLoading && <CircularProgress size={25}/>}
                 </div>
                 <p>You can fill the following form if you want to specify another location.</p>
-                {isLoading && <CircularProgress />}
             </div>
             <Box
             component="form"
